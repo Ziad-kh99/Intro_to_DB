@@ -19,9 +19,9 @@ CREATE TABLE Authors (
 
 CREATE TABLE Customers (
     customer_id int AUTO_INCREMENT PRIMARY KEY,
-    customer_name varchar(215),
-    email varchar(215),
-    address text
+    customer_name VARCHAR(215),
+    email VARCHAR(215),
+    address TEXT
 );
 
 CREATE TABLE Orders (
