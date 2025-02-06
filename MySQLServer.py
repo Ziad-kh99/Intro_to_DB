@@ -8,9 +8,8 @@ try:
             password = 'P@$$w0rd',
             database = 'alx_book_store'
     )
-except Exception as e:
+except mysql.connector.Error:
     print('Can not connect to MySQL Server')
-    print(f'Error: {e}')
     exit()
 
 cursor = db.cursor()
